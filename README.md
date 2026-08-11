@@ -24,7 +24,19 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## React / Next.js
+## React demo
+
+A minimal Vite app in `demo/` renders `react/HoverLottie.tsx` so the component can be
+checked in a real React tree:
+
+```bash
+nvm use          # Node 22.12+ (Vite 8 / rolldown needs it)
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # tsc --noEmit && vite build
+```
+
+## Using it in your own project
 
 Copy `react/HoverLottie.tsx` into your project and put `wave.lottie` in `public/`:
 
